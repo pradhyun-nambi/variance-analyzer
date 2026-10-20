@@ -1,0 +1,42 @@
+month,line_item,type,amount
+2026-04,Shoot fees - standard,revenue,2500
+2026-05,Shoot fees - standard,revenue,2500
+2026-06,Shoot fees - standard,revenue,2500
+2026-07,Shoot fees - standard,revenue,2500
+2026-08,Shoot fees - standard,revenue,1875
+2026-09,Shoot fees - standard,revenue,2500
+2026-04,Shoot fees - rush,revenue,975
+2026-05,Shoot fees - rush,revenue,1300
+2026-06,Shoot fees - rush,revenue,975
+2026-07,Shoot fees - rush,revenue,975
+2026-08,Shoot fees - rush,revenue,975
+2026-09,Shoot fees - rush,revenue,975
+2026-04,Software,expense,50
+2026-05,Software,expense,50
+2026-06,Software,expense,50
+2026-07,Software,expense,35
+2026-08,Software,expense,35
+2026-09,Software,expense,35
+2026-04,Marketing,expense,0
+2026-05,Marketing,expense,0
+2026-06,Marketing,expense,40
+2026-07,Marketing,expense,0
+2026-08,Marketing,expense,0
+2026-09,Marketing,expense,0
+2026-04,Travel,expense,100
+2026-05,Travel,expense,100
+2026-06,Travel,expense,100
+2026-07,Travel,expense,105
+2026-08,Travel,expense,110
+2026-09,Travel,expense,115
+2026-04,Equipment rental,expense,350
+2026-05,Equipment rental,expense,1100
+2026-06,Equipment rental,expense,350
+2026-07,Equipment rental,expense,350
+2026-08,Equipment rental,expense,350
+2026-09,Equipment rental,expense,350
+2026-04,Insurance,expense,60
+2026-05,Insurance,expense,60
+2026-06,Insurance,expense,60
+2026-07,Insurance,expense,60
+2026-08,Insurance,expense,60

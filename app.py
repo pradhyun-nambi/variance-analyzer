@@ -1,6 +1,8 @@
 import streamlit as st
 from src.load import load_csv, combine
 from src.variance import add_variance, flag_material
+from src.commentary import generate_commentary
+from src.export import build_report
 
 st.set_page_config(page_title="Variance Analyzer", layout="wide")
 st.title("Budget vs. Actual Variance Analyzer")
@@ -46,6 +48,19 @@ if flagged.empty:
     st.info("Nothing exceeds the current thresholds.")
 else:
     st.dataframe(flagged[cols], hide_index=True)
+
+# Commentary + Excel export
+st.subheader("Commentary")
+bullets = generate_commentary(df)
+for b in bullets:
+    st.markdown("- " + b.replace("$", "\\$"))  # escape $ so it isn't read as math
+
+st.download_button(
+    "Download Excel report",
+    data=build_report(df, bullets),
+    file_name="variance_report.xlsx",
+    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+)
 
 # Top variances chart
 st.subheader("Top 10 variances ($)")

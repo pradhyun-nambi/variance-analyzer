@@ -10,6 +10,8 @@ A manager or FP&A analyst can use this to compare plan to results, see which gap
 
 Live app: [https://variance-analyzer-fwtcuncafnjstbpmnom6dm.streamlit.app/]
 
+Sample output: [Variance memo](docs/memo.md)
+
 ## How it works
 1. Loads `budget.csv` and `actuals.csv` and validates them (columns, types, duplicates).
 2. Joins actuals to budget by month and line item. A missing actual stays visible as "missing".

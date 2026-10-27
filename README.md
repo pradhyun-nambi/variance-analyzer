@@ -8,7 +8,7 @@ A manager or FP&A analyst can use this to compare plan to results, see which gap
 ## Demo
 ![Dashboard screenshot](docs/screenshot.png)
 
-Live app: [add link after deploy]
+Live app: [https://variance-analyzer-fwtcuncafnjstbpmnom6dm.streamlit.app/]
 
 ## How it works
 1. Loads `budget.csv` and `actuals.csv` and validates them (columns, types, duplicates).

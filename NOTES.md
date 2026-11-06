@@ -8,8 +8,8 @@
   - A $0 budget would divide by zero, so variance % is left blank (NaN) and those rows are judged on dollars. A real spend against a $0 budget counts as big on the % test.
   - A missing actual stays visible as "missing" instead of being treated as $0, so it can't hide a variance.
   - Materiality has two modes: must exceed BOTH the % and $ thresholds, or EITHER one.
-- Problem: [FILL IN: one thing that broke or confused you this day, and how you fixed it]
-- Learned: [FILL IN: one thing you now understand, e.g. why the revenue and expense sign logic is opposite]
+- Problem: pytest failed on my first run because of a wrong file path. Fixed the path and re-ran until all tests passed.
+- Learned: for revenue, actual above budget is favorable, but for expenses it is unfavorable, so the label depends on the line type and not just the sign of the variance.
 
 ## Oct 27, 2026 - Days 5-7: commentary, Excel export, deploy, memo
 - Added src/commentary.py (rule-based plain-English bullets from the numbers, no LLM) and src/export.py (one-page Excel report with openpyxl), with tests. 23 tests total across load (5), variance (12), commentary (4), and export (2). All pass.
@@ -24,3 +24,4 @@
 
 ## Interview line
 "I built a variance tool that handles revenue and expense logic correctly, keeps missing data visible instead of hiding it, flags only material variances, and writes plain-English commentary. I planted known problems in the synthetic data so I could check the tool caught exactly those, and hand-verified the totals."
+
